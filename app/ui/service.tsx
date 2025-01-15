@@ -18,7 +18,7 @@ function ServiceCard({
   );
 }
 
-export default function ServiceCards() {
+export  function Service() {
   return (
     <>
       <section id="services">
