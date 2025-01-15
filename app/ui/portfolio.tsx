@@ -41,10 +41,10 @@ function PortfolioCard({
   );
 }
 
-export function PortfolioCards() {
+export function Portfolio() {
   return (
     <>
-      <section>
+      <section id="portfolio">
         <h3>PORTFOLIO</h3>
         <h2>My Work</h2>
 
