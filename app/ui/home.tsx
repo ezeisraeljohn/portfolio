@@ -44,7 +44,7 @@ function HeaderCvButton() {
 /**
  * The header, of the Home section
  */
-function HeaderForHome() {
+export function HeaderForHome() {
   return (
     <>
       <header>
@@ -158,7 +158,12 @@ function HeroText() {
 function HeroImage() {
   return (
     <div>
-      <Image src="/path/to/image.jpg" alt="The hero image" />
+      <Image
+        src="/path/to/image.jpg"
+        alt="The hero image"
+        width={200}
+        height={200}
+      />
     </div>
   );
 }
@@ -178,11 +183,10 @@ function Hero() {
 /**
  * The home section of the page
  */
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <section id="home">
-        <HeaderForHome></HeaderForHome>
         <Hero></Hero>
       </section>
     </>
