@@ -44,31 +44,37 @@ function PortfolioCard({
 export function Portfolio() {
   return (
     <>
-      <section id="portfolio">
-        <h3>PORTFOLIO</h3>
-        <h2>My Work</h2>
-
-        <PortfolioCard
-          title="Portfolio"
-          description="My portfolio website built with Next.js, React Tailwind CSS, and TypeScript."
-          image="https://via.placeholder.com/150"
-          links={[
-            {
-              name: "View Source",
-              url: "https://github.com/ezeisraeljohn/portfolio",
-            },
-            {
-              name: "View Live",
-              url: "https://ezeisraeljohn.com",
-            },
-          ]}
-          tags={[
-            { name: "Next.js", svgLogo: <SiNextdotjs></SiNextdotjs> },
-            { name: "Tailwind CSS", svgLogo: <SiTailwindcss></SiTailwindcss> },
-            { name: "React", svgLogo: <FaReact></FaReact> },
-            { name: "TypeScript", svgLogo: <SiTypescript></SiTypescript> },
-          ]}
-        ></PortfolioCard>
+      <section id="portfolio" className="mt-36 p-10 pb-20">
+        <div className=" mb-10 w-full justify-between items-center border-3">
+          <h3>PORTFOLIO</h3>
+          <h2>My Work</h2>
+        </div>
+        <div>
+          <PortfolioCard
+            title="Portfolio"
+            description="My portfolio website built with Next.js, React Tailwind CSS, and TypeScript."
+            image="https://via.placeholder.com/150"
+            links={[
+              {
+                name: "View Source",
+                url: "https://github.com/ezeisraeljohn/portfolio",
+              },
+              {
+                name: "View Live",
+                url: "https://ezeisraeljohn.com",
+              },
+            ]}
+            tags={[
+              { name: "Next.js", svgLogo: <SiNextdotjs></SiNextdotjs> },
+              {
+                name: "Tailwind CSS",
+                svgLogo: <SiTailwindcss></SiTailwindcss>,
+              },
+              { name: "React", svgLogo: <FaReact></FaReact> },
+              { name: "TypeScript", svgLogo: <SiTypescript></SiTypescript> },
+            ]}
+          ></PortfolioCard>
+        </div>
       </section>
     </>
   );

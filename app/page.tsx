@@ -1,18 +1,19 @@
 import Image from "next/image";
-import HomePage, { HeaderForHome } from "@/app/ui/home";
+import { Hero, HeaderForHome } from "@/app/ui/hero";
 import { Portfolio } from "@/app/ui/portfolio";
 import { Resume } from "@/app/ui/resume";
 import { Service } from "@/app/ui/service";
 import { Testimonial } from "@/app/ui/testimonials";
 import { Clients } from "@/app/ui/clients";
 import Contact from "@/app/ui/contact";
+import FooterSection from "./ui/footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="screen-h p-2 mx-20">
       <HeaderForHome></HeaderForHome>
       <main>
-        <HomePage></HomePage>
+        <Hero></Hero>
         <Service></Service>
         <Portfolio></Portfolio>
         <Resume></Resume>
@@ -20,7 +21,7 @@ export default function Home() {
         <Clients></Clients>
         <Contact></Contact>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+      <FooterSection></FooterSection>
     </div>
   );
 }

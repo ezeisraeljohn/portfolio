@@ -1,8 +1,8 @@
 import React from "react";
-import { CiMap } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { SiTicktick } from "react-icons/si";
+import { IoMapOutline } from "react-icons/io5";
 
 function ContactField({ placeHolder }: { placeHolder: string }) {
   return (
@@ -87,7 +87,10 @@ function ContactReachoutCard({
 function ContactReachout() {
   return (
     <div>
-      <ContactReachoutCard svgLogo={<CiMap></CiMap>} name="Lagos Nigeria" />
+      <ContactReachoutCard
+        svgLogo={<IoMapOutline></IoMapOutline>}
+        name="Lagos Nigeria"
+      />
       <ContactReachoutCard
         svgLogo={<FiPhone></FiPhone>}
         name="+234 7052175726"

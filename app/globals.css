@@ -6,7 +6,7 @@
   --background: #24282c;
   --foreground: #171717;
   --custom-black: #212428;
-  --custom-black2: #212428;
+  --custom-black2: #24282c;
 }
 
 @media (prefers-color-scheme: dark) {
