@@ -49,9 +49,11 @@ function ResumeType() {
 export function Resume() {
   return (
     <>
-      <section id="resume">
-        <h3>RESUME</h3>
-        <h2>My Resume</h2>
+      <section id="resume" className="">
+        <div className="flex flex-col justify-center items-center p-10">
+          <h3 className=" ">RESUME</h3>
+          <h2 className="font-bold text-5xl font-weight: 800">My Resume</h2>
+        </div>
         <ResumeType></ResumeType>
       </section>
     </>
